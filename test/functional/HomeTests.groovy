@@ -20,8 +20,6 @@ class HomeTests extends GebTests {
         //        Tests failed: 3
         // when I run the tests which is weird
 
-        assert browser.$('title').text() == 'Welcome to Grails'
-
         // However if I change it to the find method all is fine!
         assert browser.find('title').text() == 'Welcome to Grails'
 
